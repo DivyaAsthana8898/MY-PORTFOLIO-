@@ -306,14 +306,17 @@
     <p class="text-center max-w-2xl mx-auto mt-5 mb-12">I'd love to hear from you!
         if you have any questions,comments or feedback,please use the form below.
     </p>
-     <form action="" class="max-w-2xl mx-auto">
+      <form  method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+
+        <input type="hidden" name="access_key" value="ce808810-81d1-4feb-ad49-0a596f78d55e ">
         <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
             <input type="text" placeholder="Enter your name " class="flex-1 p-3
-             outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+             outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required  name="name">
 
              <input type="mail" placeholder="Enter your mail " class="flex-1 p-3
-             outline-none border-[0.5px] border-gray-400 rounded-md bg-white">
+             outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required  name="email">
         </div>
+          
       <textarea rows="6"  
             placeholder="ENTER YOUR MESSAGE"
             class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6">
@@ -352,6 +355,7 @@
 </body>
 
 </html>
+
 
 
 
